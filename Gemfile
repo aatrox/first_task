@@ -7,7 +7,6 @@ group :development do
   gem 'sqlite3', '1.3.8'
 end
 
-gem 'pg'
 gem 'sass-rails', '4.0.1'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.1'
@@ -24,4 +23,5 @@ end
 
 group :production do
   gem 'rails_12factor'
+  gem 'pg'
 end
