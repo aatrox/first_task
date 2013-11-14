@@ -16,6 +16,11 @@ gem 'jbuilder', '1.0.2'
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                           :github => 'anjlab/bootstrap-rails',
                           :branch => '3.0.0'
+gem 'pry'
+  gem 'pry-rails'
+  gem 'pry-debugger'
+  gem 'pry-remote'
+  gem 'pry-stack_explorer'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false

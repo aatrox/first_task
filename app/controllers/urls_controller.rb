@@ -1,4 +1,6 @@
 class UrlsController <ApplicationController
+	require 'open-uri'
+
 	def shorten
 		@url=Url.new
 	end
@@ -11,8 +13,8 @@ class UrlsController <ApplicationController
 	end
 
 	def turn
-		Url.find(param[:shorten_url])
-		redirect_to original_url
+		url = Url.find_by(shorten_url: params[:shorten_url])
+		redirect_to url.original_url
 	end
 
 private
