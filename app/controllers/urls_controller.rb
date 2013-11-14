@@ -14,7 +14,11 @@ class UrlsController <ApplicationController
 
 	def turn
 		url = Url.find_by(shorten_url: params[:shorten_url])
+		if url.original_url.include? "http"
 		redirect_to url.original_url
+	    else
+	    redirect_to "http://" + url.original_url
+	    end
 	end
 
 private
