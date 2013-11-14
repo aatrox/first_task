@@ -1,5 +1,5 @@
 class UrlsController <ApplicationController
-	require 'open-uri'
+	#require 'open-uri'
 
 	def shorten
 		@url=Url.new
