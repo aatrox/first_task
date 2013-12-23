@@ -12,3 +12,40 @@
  *= require_tree .
  *= require twitter/bootstrap
  */
+
+
+button {
+  color: #fff;
+  background-color: #3276b1;
+  display: block;
+  position: relative;
+  font-style: italic;
+  width:250px;
+}
+button:before, button:after {
+  display: block;
+  position:absolute;
+  content: '';
+}
+button:before {
+  background: url(store-before.png);
+  height: 23px;
+  width: 54px;
+  top:0px;
+  left:0px;
+}
+button:after {
+  background: url(store-after.png);
+  height: 20px;
+  width: 41px;
+  bottom:0px;
+  right:0px;
+}
+button:hover:before, button:focus:before {
+  top:-5px;
+  left:-5px;
+}
+button:hover:after, button:focus:after {
+  bottom:-5px;
+  right:-5px;
+}

@@ -1,9 +1,12 @@
 <h1>result</h1>
 <p>your shorten_url is <div id="short-value"><%=request.protocol%><%=request.host_with_port%>/<%= @url.shorten_url %></div></p>
 <!-- <button id="copy-btn">copy this url</button> -->
-<button  data-clipboard-target='short-value' data-clipboard-text='Default clipboard text from attribute' id='d_clip_button' title='Click me to copy to clipboard.'>
-    <b>Copy To Clipboard...</b>
+<button  data-clipboard-target='short-value' data-clipboard-text='Default clipboard text from attribute' id='d_clip_button' class='dibutton' title='Click me to copy to clipboard.'>
+    <b >Copy To Clipboard...</b>
   </button>
+
+
+
 
 
   <script>
