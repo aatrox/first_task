@@ -15,37 +15,64 @@
 
 
 button {
-  color: #fff;
-  background-color: #3276b1;
-  display: block;
-  position: relative;
+ 
   font-style: italic;
-  width:250px;
+  width: 200px;
 }
-button:before, button:after {
+
+
+h1{
   display: block;
+  text-align: center;
+  position:relative;
+  
+}
+
+h1:before, h1:after{
+  display:block;
+  background: url(bell1.jpg);
+  height: 37px;
+  width: 39px;
   position:absolute;
   content: '';
 }
-button:before {
-  background: url(store-before.png);
-  height: 23px;
-  width: 54px;
-  top:0px;
-  left:0px;
+
+h1:before {
+  left:400px;
 }
-button:after {
-  background: url(store-after.png);
-  height: 20px;
-  width: 41px;
-  bottom:0px;
-  right:0px;
+h1:after {
+  right:400px;
+  top:0;
 }
-button:hover:before, button:focus:before {
-  top:-5px;
-  left:-5px;
+
+.container {
+  margin-top: 50px;
+  background: url(christmas.jpg);
 }
-button:hover:after, button:focus:after {
-  bottom:-5px;
-  right:-5px;
+
+p {
+
+  font-style: italic;
+  font-weight: bold;
+}
+
+.snowman{
+  margin-left: 60px;
+}
+.oldman{
+  margin-top: 20px;
+}
+
+.content{
+  width: 460px;
+}
+
+.content #short-value {
+  width: 230px;
+  float: left;
+}
+
+.content button
+{
+  float left;
 }

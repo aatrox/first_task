@@ -1,16 +1,26 @@
-<h1>result</h1>
-<p>your shorten_url is <div id="short-value"><%=request.protocol%><%=request.host_with_port%>/<%= @url.shorten_url %></div></p>
-<!-- <button id="copy-btn">copy this url</button> -->
-<button  data-clipboard-target='short-value' data-clipboard-text='Default clipboard text from attribute' id='d_clip_button' class='dibutton' title='Click me to copy to clipboard.'>
-    <b >Copy To Clipboard...</b>
-  </button>
+<h1>Result</h1>
+<br/>
+<div class="row">
+  <div class="col-md-4 col-md-offset-4">
+    <p>Your shorten_url is </p>
+    <div class="content">
+  	  <div id="short-value"><%=request.protocol%><%=request.host_with_port%>/<%= @url.shorten_url %></div>
+
+      <button  data-clipboard-target='short-value' data-clipboard-text='Default clipboard text from attribute' id='d_clip_button' class='btn btn-success' title='Click me to copy to clipboard.'>
+      <b>Copy To Clipboard...</b>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-1 col-md-offset-6">
+  <%= image_tag "oldman.jpg", class: "oldman" %>
+  </div>
+</div>
 
 
 
 
 
-  <script>
-  $(document).ready(function() {
-    var clip = new ZeroClipboard($("#d_clip_button"))
-  });
-</script>
+ 

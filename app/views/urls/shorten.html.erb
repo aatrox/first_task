@@ -1,11 +1,18 @@
 <h1>Di-shorten</h1>
+<br/>
 <div class="row">
-	<div class="span6 offset3">
-		<%= form_for(@url) do |f|%>
-		 <%= f.label :original_url%>
-		 <%= f.text_field :original_url%>
-		 <%= f.submit "shorten this url", class: "btn btn-large btn-primary"%>
-        <%end%>
-    </div>
-</div>    
+	<div class="col-md-4 col-md-offset-4">
+		<%= form_for(@url) do |f| %>
+		  <%= f.label :original_url %>
+		  <%= f.text_field :original_url %>
+		  <%= f.submit "shorten this url", class: "btn btn-large btn-primary"%>
+    <% end %>
+  </div>
+
+  <div class="row">
+  	<div class="col-md-1 col-md-offset-7">
+		  <%= image_tag "snowman.jpg", class: "snowman", height: '80', width: '80' %>
+		</div>
+	</di>
+</div>
 
